@@ -1,0 +1,294 @@
+/* Importar la fuente */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    padding-top: 80px; /* Ajuste para que el contenido no quede oculto debajo de la navbar */
+}
+
+/* Navbar fija */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px; /* Reducimos el padding horizontal */
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.nav-links a:last-child {
+    color: #8a2be2; /* Color lila claro */
+    font-weight: 600;
+}
+
+.nav-links a:last-child:hover {
+    color: #6c21b3; /* Un tono más oscuro del lila */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #ffffff, #e3e6e8);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #666;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    background-color: #8a2be2; /* Color lila claro */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #6c21b3; /* Un tono más oscuro del lila */
+}
+
+/* Imagen de presentación */
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones */
+.section {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #8a2be2; /* Color lila claro */
+}
+
+.section p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Habilidades */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #8a2be2; /* Color lila claro */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+/* Certificados */
+.certificates-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificates-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Ocultar scrollbar */
+    -ms-overflow-style: none; /* Ocultar scrollbar en IE */
+}
+
+.certificates-slider::-webkit-scrollbar {
+    display: none; /* Ocultar scrollbar en Chrome */
+}
+
+.certificate-card {
+    flex: 0 0 auto;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    text-align: center;
+    border: 2px solid #8a2be2; /* Borde lila claro */
+    scroll-snap-align: start;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.certificate-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #8a2be2; /* Color lila claro */
+}
+
+.certificate-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    background-color: #8a2be2; /* Color lila claro */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.certificate-card a:hover {
+    background-color: #6c21b3; /* Un tono más oscuro del lila */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Contacto */
+.contact {
+    background-color: #e3e6e8;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #8a2be2; /* Color lila claro */
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    background-color: #8a2be2; /* Color lila claro */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #6c21b3; /* Un tono más oscuro del lila */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+}
